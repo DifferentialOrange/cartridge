@@ -72,6 +72,7 @@ jobs:
       - name: Run tarantoolctl rocks make
         run: |
           . ./venv/bin/activate
+          tarantoolctl rocks install ./graphql-scm-1.all.rock
           tarantoolctl rocks make
         env:
           CMAKE_LDOC_FIND_REQUIRED: 'YES'
